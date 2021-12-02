@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Image } from "semantic-ui-react";
 import { useSelector, useDispatch } from "react-redux";
 import { setMovieDetail, setDetails } from "../actions";
-import notfound from '../assets/images/notfound.png'
+import notfound from "../assets/images/notfound.png";
 
 function MovieCover({ title, item }) {
   const showDetailScreen = useSelector((state) => state.showDetailScreen);
