@@ -16,7 +16,6 @@ function MoviesList() {
           {movies.map((item) => (
             <MovieCover key={item.id} item={item} title={item.l} />
           ))}
-          <Card />
         </Card.Group>
       </Container>
     );
