@@ -9,6 +9,16 @@ function MoviesList() {
   const showDetailScreen = useSelector((state) => state.showDetailScreen);
   const movies = movieList[0] || [];
 
+  // if (movies === undefined) {
+  //   return (
+  //     <div className="ui warning message">
+  //       <div className="header">
+  //         Undefined search terms. Please re-define your search.
+  //       </div>
+  //     </div>
+  //   );
+  // }
+
   if (showDetailScreen === true && show === true) {
     return (
       <Container>
