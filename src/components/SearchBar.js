@@ -27,10 +27,11 @@ function SearchBar() {
       .then(function (response) {
         dispatch(setMovieList(response.data.d));
         console.log(response.data.d);
+
         if (show === false) {
           dispatch(setShow());
-          alert("Undefined search terms. Please re-define your search.");
         }
+
         if (showDetailScreen === true) {
           dispatch(setDetails());
         }

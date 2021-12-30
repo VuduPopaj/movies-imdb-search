@@ -1,5 +1,5 @@
-const initialState = [];
-const movieList = (state = initialState, action) => {
+// const initialState = [];
+const movieList = (state = "Dog Soldiers", action) => {
   switch (action.type) {
     case "MOVIE_INFO":
       return [action.payload];
